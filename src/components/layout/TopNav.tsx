@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/ui/logo";
 import { NAV_ITEMS } from "@/components/layout/Sidebar";
 import { cn } from "@/lib/utils";
-import { Logo } from "@/components/ui/logo";
 
 export function TopNav() {
   const [theme, setTheme] = useState("dark");
