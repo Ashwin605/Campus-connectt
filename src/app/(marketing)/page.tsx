@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring, Variants } from "framer-motion";
 import Link from "next/link";
 import { Hero3D } from "@/components/3d/NetworkGraph";
 import { ArrowRight, Sparkles, Building2, Users, Briefcase, Rocket, Code, Brain } from "lucide-react";
@@ -41,7 +41,7 @@ const AI_FEATURES = [
   { title: "AI Startup Advisor", status: "Coming Q4 2026" },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -49,7 +49,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 40, filter: "blur(10px)" },
   show: { opacity: 1, y: 0, filter: "blur(0px)", transition: { type: "spring", stiffness: 120, damping: 20 } },
 };
