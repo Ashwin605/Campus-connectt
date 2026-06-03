@@ -6,7 +6,7 @@ import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
 function NetworkNodes(props: any) {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
   
   const sphere = useMemo(() => {
     // Generate random points in a sphere
